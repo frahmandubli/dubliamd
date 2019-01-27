@@ -1,0 +1,7 @@
+{
+  "env": "dev",
+  "api": {
+    "url": "http://localhost:8091",
+    "port": 8091
+  }
+}

@@ -1,0 +1,3 @@
+F:\Development\Projects\dubliamd2\dubliamd\obj\Debug\dubliamd.njsprojAssemblyReference.cache
+F:\Development\Projects\dubliamd2\dubliamd\obj\Debug\dubliamd.njsproj.CoreCompileInputs.cache
+F:\Development\Projects\dubliamd2\dubliamd\bin\Microsoft.NodejsTools.WebRole.dll

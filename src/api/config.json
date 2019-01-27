@@ -1,0 +1,12 @@
+{
+  "db": {
+    "user": "sa",
+    "password": "admin123#@",
+    "server": "OMTDNBFAZLUR",
+    "database": "DubLiAMD"
+  },
+  "app": {
+    "name": "dubli amd web api",
+    "port": 8091
+  }
+}

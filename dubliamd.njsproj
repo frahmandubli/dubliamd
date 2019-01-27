@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9726a6e7-debe-49fe-bb6f-be271af7e2bb}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ProjectFiles</ProjectView>
+    <StartupFile>src\index.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="src\api\config.json" />
+    <Content Include="src\config.json" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="public\index.html" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\manifest.json" />
+    <Content Include="src\assets\css\application.css" />
+    <Content Include="src\assets\css\bootstrap-responsive.css" />
+    <Content Include="src\assets\css\bootstrap.css" />
+    <Content Include="src\assets\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="src\assets\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="src\assets\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="src\assets\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="src\assets\ico\favicon.ico" />
+    <Content Include="src\assets\img\flags\add.png" />
+    <Content Include="src\assets\img\flags\at.png" />
+    <Content Include="src\assets\img\flags\au.png" />
+    <Content Include="src\assets\img\flags\de.png" />
+    <Content Include="src\assets\img\flags\dk.png" />
+    <Content Include="src\assets\img\flags\es.png" />
+    <Content Include="src\assets\img\flags\gb.png" />
+    <Content Include="src\assets\img\flags\hu.png" />
+    <Content Include="src\assets\img\flags\ru.png" />
+    <Content Include="src\assets\img\flags\si.png" />
+    <Content Include="src\assets\img\flags\us.png" />
+    <Content Include="src\assets\img\flags\ww.png" />
+    <Content Include="src\assets\img\glyphicons-halflings-white.png" />
+    <Content Include="src\assets\img\glyphicons-halflings.png" />
+    <Content Include="src\assets\img\logo.png" />
+    <Content Include="src\logo.svg" />
+    <Content Include="src\App.js" />
+    <Content Include="src\App.test.js" />
+    <Content Include="src\index.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public" />
+    <Folder Include="src" />
+    <Folder Include="src\assets\" />
+    <Folder Include="src\assets\css\" />
+    <Folder Include="src\assets\ico\" />
+    <Folder Include="src\assets\img\" />
+    <Folder Include="src\assets\img\flags\" />
+    <Folder Include="src\assets\js\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\api\dataaccess\" />
+    <Folder Include="src\api\" />
+    <Folder Include="src\pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\api\secureConfig.js" />
+    <Compile Include="src\api\country.js" />
+    <Compile Include="src\assets\js\application.js" />
+    <Compile Include="src\assets\js\bootstrap.js" />
+    <Compile Include="src\assets\js\bootstrap.min.js" />
+    <Compile Include="src\assets\js\html5shiv.js" />
+    <Compile Include="src\assets\js\jquery.js" />
+    <Compile Include="src\components\countrylist.js" />
+    <Compile Include="src\components\countryitem.js" />
+    <Compile Include="src\components\appheader.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\api\dataaccess\dataProvider.js" />
+    <Compile Include="src\api\dataaccess\lookupDataManager.js" />
+    <Compile Include="src\components\loginform.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\pages\login.js" />
+    <Compile Include="src\pages\home.js" />
+    <Compile Include="src\registerServiceWorker.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
